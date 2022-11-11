@@ -1,4 +1,9 @@
-:root {}
+:root {
+    --pastelGreen: #77DF79;
+    --green: #44D362;
+    --lightGreen: #77df7938;
+    --white: #E6E6CA;
+}
 
 *,
 *::before,
@@ -6,12 +11,59 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    margin-bottom: 10px;
 }
 
-body{
+body {
     font-family: 'Karla', sans-serif;
 }
 
-button, input{
+button,
+input {
     font-family: 'Karla', sans-serif;
+}
+
+.card {}
+
+.card--title {
+    font-size: 1.5rem;
+}
+
+
+.card--company {
+    border-radius: 0.2rem;
+    border-color: var(--pastelGreen);
+    background-color: var(--lightGreen);
+    border-style: solid;
+    border-width: 0.06rem;
+    display: inline-block;
+    padding: 0.1rem 0.3rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--pastelGreen);
+}
+
+.card--date {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+
+.card--duties {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 15px;
+
+}
+
+.card--duties--text {
+    font-size: 0.8rem;
+    margin-left: 10px;
+
+}
+
+.card--duties--img {
+    width: 25px;
 }

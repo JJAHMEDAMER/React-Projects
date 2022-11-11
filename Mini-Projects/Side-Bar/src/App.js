@@ -14,20 +14,17 @@ function App() {
     setData(await response.json());
   }
 
-  console.log(data);
-
   useEffect(() => {
     APIRequest();
   }, []);
 
-  console.log(data);
-
   const cardList = data.map((item) => <Card {...item} />);
-
   return (
-    <div>
-      <h1>App Hello World</h1>
-      {cardList}
+    <div className="app">
+      <h1 className="app--title">Experience</h1>
+      <div className="app--card">
+        {cardList[0]}
+      </div>
     </div>
   );
 }

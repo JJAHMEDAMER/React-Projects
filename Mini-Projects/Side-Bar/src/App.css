@@ -2,7 +2,8 @@
     --pastelGreen: #77DF79;
     --green: #44D362;
     --lightGreen: #77df7938;
-    --white: #E6E6CA;
+    --white: #ffffffee;
+    --greenShadow: #074b0899;
 }
 
 *,
@@ -16,6 +17,11 @@
 
 body {
     font-family: 'Karla', sans-serif;
+    background-color: var(--pastelGreen);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 button,
@@ -23,10 +29,29 @@ input {
     font-family: 'Karla', sans-serif;
 }
 
+.app{
+margin: 10rem;
+
+}
+
+.app--title{
+    font-size: 1.2rem;
+}
+.app--card{
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: 1rem;
+    border-style: solid;
+    border-color: var(--green);
+    border-width: 2px;
+    box-shadow: 0 7px 7px -4px var(--greenShadow);
+
+}
+
 .card {}
 
 .card--title {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 

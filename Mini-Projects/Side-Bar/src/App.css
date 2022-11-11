@@ -29,8 +29,6 @@ input {
     font-family: 'Karla', sans-serif;
 }
 
-.app {}
-
 .app--title {
     font-size: 1.2rem;
 }
@@ -49,7 +47,6 @@ input {
     justify-content: space-between;
 
     width: 35rem;
-    height: 25rem;
 }
 
 .app--navbar {
@@ -59,12 +56,12 @@ input {
 }
 
 .app--divider {
-    width: 0.2rem;
-    height: 80%;
+    width: 5px;
+    height: 290px;
     background-color: var(--pastelGreen);
 }
 
-.app--card{
+.app--card {
     margin-left: 25px;
 }
 

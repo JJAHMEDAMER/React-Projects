@@ -29,23 +29,55 @@ input {
     font-family: 'Karla', sans-serif;
 }
 
-.app{
-margin: 10rem;
+.app {}
 
-}
-
-.app--title{
+.app--title {
     font-size: 1.2rem;
 }
-.app--card{
+
+.app--content {
     background-color: var(--white);
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 1rem;
     border-style: solid;
     border-color: var(--green);
     border-width: 2px;
     box-shadow: 0 7px 7px -4px var(--greenShadow);
 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 35rem;
+    height: 25rem;
+}
+
+.app--navbar {
+    display: flex;
+    flex-direction: column;
+    margin-right: 25px;
+}
+
+.app--divider {
+    width: 0.2rem;
+    height: 80%;
+    background-color: var(--pastelGreen);
+}
+
+.app--card{
+    margin-left: 25px;
+}
+
+.navbar {
+    background-color: #ffffff00;
+    border-width: 0;
+    font-weight: 600;
+}
+
+.navbar--underline {
+    background-color: var(--green);
+    width: 5rem;
+    height: 0.1rem;
 }
 
 .card {}

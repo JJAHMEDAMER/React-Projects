@@ -9,5 +9,9 @@
 }
 
 body{
-    font-family: "Karla";
+    font-family: 'Karla', sans-serif;
+}
+
+button, input{
+    font-family: 'Karla', sans-serif;
 }

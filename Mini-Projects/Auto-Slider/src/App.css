@@ -1,4 +1,8 @@
-:root {}
+:root {
+    --white: #ffffffdd;
+    --color: #e690be;
+    --shadow: #5b1339;
+}
 
 *,
 *::before,
@@ -15,4 +19,23 @@ body {
 button,
 input {
     font: inherit;
+}
+
+body {
+    background-color: var(--color);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app {
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 5px 8px -3px var(--shadow);
+}
+
+.card {
+    padding: 1rem;
 }

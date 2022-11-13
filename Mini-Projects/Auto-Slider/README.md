@@ -17,6 +17,10 @@ Auto Slider React app using react hook useEffect to run an interval function eve
 <img src="./webpage.png">
 </div>
 
+
+https://user-images.githubusercontent.com/85419487/201538121-61e29d56-65c3-4bed-9cd0-7e141b91a8ae.mp4
+
+
 ### Color Pallet
 
 ```CSS

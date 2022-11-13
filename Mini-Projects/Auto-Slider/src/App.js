@@ -30,6 +30,13 @@ function App() {
     }
   }
 
+  React.useEffect(() => {
+    let slider = setInterval(next, 2500);
+    return () => {
+      clearInterval(slider);
+    };
+  }, [index]);
+
   return (
     <div className="app">
       <img

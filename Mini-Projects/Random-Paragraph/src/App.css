@@ -29,6 +29,13 @@ input {
     font: inherit;
 }
 
+.app--title{
+    font-size: 1.2rem;
+    margin-bottom: 0.4rem;
+    margin-left: 1rem;
+    color: var(--shadow);
+}
+
 .card {
     background-color: var(--white);
     padding: 1rem 2rem;

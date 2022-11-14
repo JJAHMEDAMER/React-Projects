@@ -23,7 +23,7 @@ function App() {
   }
   return (
     <div>
-      <h1>App Hello World</h1>
+      <h1 className="app--title">Tired of Lorem Ipsum</h1>
       <Card onClickHandle={para} onChangeHandle={newValue} />
       {data.slice(0, index).map((item) => {
         return <CardParagraph list={item} />;

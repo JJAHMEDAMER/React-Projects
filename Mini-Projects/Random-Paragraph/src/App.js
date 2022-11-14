@@ -10,13 +10,16 @@ import data from "./data";
 function App() {
   const [index, setIndex] = React.useState(0);
 
+  let newIndex = 0;
   function newValue(change) {
-    // newIndex = change;
-    setIndex(change)
-    console.log(change)
+    if (change < 0) {
+      newIndex = 0;
+    } else {
+      newIndex = change;
+    }
   }
   function para() {
-    setIndex(5);
+    setIndex(newIndex);
   }
   return (
     <div>

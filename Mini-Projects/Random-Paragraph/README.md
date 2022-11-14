@@ -1,17 +1,13 @@
-# Travel Journal
+# Random Paragraph Generator
 
 ### React App
-
+A web application that generates random text that you can use in sample web pages or typography samples.
 
 ### App Components
 
 1. Generative Card
 2. Pure Css
 3. React Use State Hook
-4. Navigation Bar
-5. Ui Design Daily <a href="">Link</a>
-
-
 
 ### Web Page
 
@@ -23,10 +19,10 @@
 
 ### Color Pallet
 
-``` CSS
+```CSS
 :root {
-
+    --white: #fffd;
+    --orange: #FEBE8C;
+    --shadow: #642c01;
 }
-
 ```
-

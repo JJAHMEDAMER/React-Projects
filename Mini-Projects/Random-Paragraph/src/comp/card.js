@@ -1,13 +1,20 @@
 import React from "react";
 
-const Card = ({onClickHandle}) => (
+const Card = ({ onClickHandle, onChangeHandle }) => (
   <div className="card">
     <div className="card--control">
       <div className="card--control">
         <p className="card--control--title">Paragraph: </p>
-        <input className="card--control--input" placeholder="1" type="number"></input>
+        <input
+          className="card--control--input"
+          onChange={(change) => onChangeHandle(change.target.value)}
+          placeholder="1"
+          type="number"
+        ></input>
       </div>
-      <button className="card--control--button" onClick={onClickHandle}>Generate</button>
+      <button className="card--control--button" onClick={onClickHandle}>
+        Generate
+      </button>
     </div>
   </div>
 );

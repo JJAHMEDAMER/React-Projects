@@ -35,6 +35,7 @@ input {
     border-radius: 1rem;
     box-shadow: 0 5px 10px -7px var(--shadow);
     width: 30rem;
+    margin-bottom: 1rem;
 }
 
 

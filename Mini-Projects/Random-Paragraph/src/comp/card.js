@@ -9,7 +9,6 @@ const Card = () => (
       </div>
       <button className="card--control--button">Generate</button>
     </div>
-    <h1>Card Hello World</h1>
   </div>
 );
 

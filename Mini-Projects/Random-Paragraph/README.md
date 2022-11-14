@@ -16,7 +16,9 @@
 ### Web Page
 
 <div align="center">
-<img src="./src/assets/webpage.png">
+<img src="./webpage.png">
+<img src="./webpage_1.png" width=350px>
+<img src="./webpage_2.png" width=350px>
 </div>
 
 ### Color Pallet

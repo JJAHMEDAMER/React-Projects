@@ -22,4 +22,6 @@
 **/yarn-debug.log*
 **/yarn-error.log*
 
+# Base Project
 **/001-base-project
+**/002-base-project-no-node_modules

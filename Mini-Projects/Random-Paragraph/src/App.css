@@ -29,9 +29,48 @@ input {
     font: inherit;
 }
 
-.card{
+.card {
     background-color: var(--white);
-    padding: 1rem;
+    padding: 1rem 2rem;
     border-radius: 1rem;
     box-shadow: 0 5px 10px -7px var(--shadow);
+    width: 30rem;
+}
+
+
+.card--control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card--control--title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.card--control--input {
+    width: 2.3rem;
+    padding: 0.3rem ;
+    border-width: 0;
+    border-radius: 10px;
+    background-color: var(--orange);
+    font-weight: 600;
+    text-align: center;
+}
+
+.card--control--input::placeholder {
+    opacity: .8;
+    color: var(--shadow);
+    font-weight: 600;
+}
+
+.card--control--button {
+    padding: 0.3rem 0.8rem;
+    border-width: 0;
+    border-radius: 10px;
+    background-color: var(--shadow);
+    color: var(--white);
+    font-weight: 600;
 }

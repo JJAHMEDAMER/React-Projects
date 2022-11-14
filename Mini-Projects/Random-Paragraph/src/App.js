@@ -8,11 +8,17 @@ import CardParagraph from "./comp/paragraph";
 import data from "./data";
 
 function App() {
+  const [index, setIndex] = React.useState(0);
+  function para() {
+    setIndex(5);
+  }
   return (
     <div>
       <h1>App Hello World</h1>
-      <Card />
-      <CardParagraph list={data[1]} />
+      <Card onClickHandle={para} />
+      {data.slice(0, index).map((item) => {
+        return <CardParagraph list={item} />;
+      })}
     </div>
   );
 }

@@ -8,7 +8,7 @@ const Card = ({ onClickHandle, onChangeHandle }) => (
         <input
           className="card--control--input"
           onChange={(change) => onChangeHandle(change.target.value)}
-          placeholder="1"
+          placeholder="0"
           type="number"
         ></input>
       </div>

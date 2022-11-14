@@ -67,6 +67,19 @@ input {
     font-weight: 600;
 }
 
+/* Chrome, Safari, Edge, Opera */
+.card--control--input::-webkit-outer-spin-button,
+.card--control--input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.card--control--input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
 .card--control--button {
     padding: 0.3rem 0.8rem;
     border-width: 0;

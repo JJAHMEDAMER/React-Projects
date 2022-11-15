@@ -57,6 +57,7 @@ input {
     border-radius: 1rem;
     border-width: 0;
     font-weight: 600;
+    text-align: center;
 }
 
 .control--input::placeholder{

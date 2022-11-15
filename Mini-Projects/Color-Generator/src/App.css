@@ -1,6 +1,7 @@
 :root {
-    --bg-color:#171717;
+    --bg-color: #171717;
     --white: #fff;
+    --card-bg: #2b2b2b;
 }
 
 *,
@@ -20,10 +21,52 @@ body {
     justify-content: center;
     background-color: var(--bg-color);
     color: var(--white);
-
 }
 
 button,
 input {
     font: inherit;
 }
+
+.flex{
+    display: flex;
+}
+
+.card{
+    background-color: var(--card-bg);
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 35rem;
+}
+
+.control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.control--text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-right: 1rem;
+}
+
+.control--input {
+    width: 7rem;
+    padding: 0.2rem 1rem;
+    border-radius: 1rem;
+    border-width: 0;
+    font-weight: 600;
+}
+
+.control--input::placeholder{
+    text-align: center;
+}
+
+.control--button {
+    padding: 0.2rem 1rem;
+    border-radius: 1rem;
+    border-width: 0;
+    font-weight: 600;
+}
+

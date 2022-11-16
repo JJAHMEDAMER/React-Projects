@@ -13,7 +13,7 @@ function App() {
 
   function generate() {
     let rgb = hexToRgb(color);
-    console.log(rgb);
+    for (let i = 0; i < 19; i++) {}
   }
 
   function hexToRgb(hex) {
@@ -31,7 +31,13 @@ function App() {
     <div>
       <h1>App Hello World</h1>
       <ControllerBar onClickHandler={generate} onChangeHandler={getInput} />
-      <Card />
+      <div className="app--color">
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </div>
     </div>
   );
 }

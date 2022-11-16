@@ -28,21 +28,22 @@ input {
     font: inherit;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
-.card{
+.card {
     background-color: var(--card-bg);
     padding: 1rem;
     border-radius: 1rem;
-    width: 35rem;
 }
 
 .control {
+    width: 35rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;    
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
 .control--text {
@@ -60,7 +61,7 @@ input {
     text-align: center;
 }
 
-.control--input::placeholder{
+.control--input::placeholder {
     text-align: center;
 }
 
@@ -71,3 +72,23 @@ input {
     font-weight: 600;
 }
 
+.app--color {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.color {
+    padding: 0;
+}
+
+.color--view {
+    height: 5rem;
+    background-color: #fff;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.color--code {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}

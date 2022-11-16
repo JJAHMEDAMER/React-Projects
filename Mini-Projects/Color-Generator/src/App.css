@@ -88,10 +88,19 @@ input {
     padding: 0;
 }
 
+
+
 .color--view {
     height: 5rem;
     background-color: #fff;
     border-radius: 1rem 1rem 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color--copied{
+    
 }
 
 .color--code {

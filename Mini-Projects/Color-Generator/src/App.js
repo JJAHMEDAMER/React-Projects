@@ -7,6 +7,7 @@ import ControllerBar from "./comp/controller";
 function App() {
   let color;
   const [colorList, setColorList] = React.useState([]);
+
   function getInput(changedValue) {
     color = changedValue;
   }
@@ -17,9 +18,9 @@ function App() {
     let tempListRGB = [];
     for (let i = 0; i < 11; i++) {
       tempListRGB.push([
-        Math.round(255  - rgb[0] * i * 0.1),
-        Math.round(255  - rgb[1] * i * 0.1),
-        Math.round(255  - rgb[2] * i * 0.1),
+        Math.round(255 - rgb[0] * i * 0.1),
+        Math.round(255 - rgb[1] * i * 0.1),
+        Math.round(255 - rgb[2] * i * 0.1),
       ]);
     }
     for (let i = 0; i < 11; i++) {

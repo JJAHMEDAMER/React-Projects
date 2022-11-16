@@ -5,6 +5,12 @@ Enter a hex color code and a palette will be generated.
 
 A color palette is a combination of colors used by UI designers when designing an interface. When used correctly, color palettes form the visual foundation of your brand, help to maintain consistency, and make your user interface aesthetically pleasing and enjoyable to use.
 
+## App Features
+
+1. Copied to clipboard
+2. Generate Contrasting colors
+3. Generate Mono-Colors
+
 ### App Components
 
 1. Generative Card

@@ -11,7 +11,7 @@ const ControllerBar = ({ onClickHandler, onChangeHandler }) => (
       ></input>
     </div>
     <button className="control--button" onClick={onClickHandler}>
-      Generator
+      Generate
     </button>
   </div>
 );

@@ -57,7 +57,7 @@ function App() {
 
   return (
     <div>
-      <h1>App Hello World</h1>
+      <h1 className="app--title">Generate Colors</h1>
       <ControllerBar onClickHandler={generate} onChangeHandler={getInput} />
       <div className="app--color">
         {colorList.map((item) => (

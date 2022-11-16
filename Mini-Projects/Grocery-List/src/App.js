@@ -5,7 +5,11 @@ import Card from "./comp/card";
 import ControllerBar from "./comp/controller";
 
 function App() {
-  function add() {}
+  const [appList, setAppList] = React.useState(["eggs", "milk"]);
+  function add() {
+    console.log(inputValue);
+    setAppList([...appList, inputValue]);
+  }
 
   let inputValue;
   function getInput(changedValue) {
@@ -14,8 +18,8 @@ function App() {
   return (
     <div>
       <h1>App Hello World</h1>
-      <Card />
       <ControllerBar onClickHandler={add} onChangeHandler={getInput} />
+      <Card appList={appList} />
     </div>
   );
 }

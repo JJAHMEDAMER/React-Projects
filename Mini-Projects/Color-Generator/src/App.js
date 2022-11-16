@@ -13,7 +13,35 @@ function App() {
 
   function generate() {
     let rgb = hexToRgb(color);
-    for (let i = 0; i < 19; i++) {}
+    console.log(color);
+    let tempListRGB = [];
+    for (let i = 0; i < 11; i++) {
+      tempListRGB.push([
+        Math.round(255  - rgb[0] * i * 0.1),
+        Math.round(255  - rgb[1] * i * 0.1),
+        Math.round(255  - rgb[2] * i * 0.1),
+      ]);
+    }
+    for (let i = 0; i < 11; i++) {
+      tempListRGB.push([
+        Math.round(rgb[0] - rgb[0] * i * 0.1),
+        Math.round(rgb[1] - rgb[1] * i * 0.1),
+        Math.round(rgb[2] - rgb[2] * i * 0.1),
+      ]);
+    }
+    console.log([rgb] + tempListRGB);
+    console.log(tempListRGB);
+
+    let tempListHex = [];
+    for (let item of tempListRGB) {
+      tempListHex.push(rgbToHex(item[0], item[1], item[2]));
+    }
+    console.log(tempListHex);
+    setColorList(tempListHex);
+  }
+
+  function rgbToHex(r, g, b) {
+    return "#" + ((1 << 24) | (r << 16) | (g << 8) | b).toString(16).slice(1);
   }
 
   function hexToRgb(hex) {
@@ -32,11 +60,9 @@ function App() {
       <h1>App Hello World</h1>
       <ControllerBar onClickHandler={generate} onChangeHandler={getInput} />
       <div className="app--color">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        {colorList.map((item) => (
+          <Card color={item} />
+        ))}
       </div>
     </div>
   );

@@ -7,7 +7,6 @@ import ControllerBar from "./comp/controller";
 function App() {
   const [appList, setAppList] = React.useState(["eggs", "milk"]);
   function add() {
-    console.log(inputValue);
     setAppList([...appList, inputValue]);
   }
 
@@ -17,11 +16,12 @@ function App() {
   }
 
   function editButton(itemIndex) {
-    alert(itemIndex);
+    alert("woow")
   }
 
   function deleteButton(itemIndex) {
-    alert(itemIndex);
+    let newList = appList.filter((item, index) => index != itemIndex);
+    setAppList(newList);
   }
 
   return (

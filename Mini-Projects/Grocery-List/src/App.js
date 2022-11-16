@@ -16,8 +16,8 @@ function App() {
     inputValue = changedValue;
   }
   return (
-    <div>
-      <h1>App Hello World</h1>
+    <div className="app">
+      <h1 className="app--title">Grocery List</h1>
       <ControllerBar onClickHandler={add} onChangeHandler={getInput} />
       <Card appList={appList} />
     </div>

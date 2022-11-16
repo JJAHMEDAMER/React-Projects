@@ -28,20 +28,25 @@ input {
 }
 
 .hr-line {
-    width: 85%;
+    width: 95%;
     height: 2px;
     background-color: rgba(255, 255, 255, 0.155);
-    margin: 0 auto 0.5rem ;
+    margin: 0 auto 0.5rem;
 }
 
 .flex {
     display: flex;
 }
 
+.app--title{
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
 /* Controller */
 .card {
     background-color: var(--card-bg);
-    padding: 1rem;
+    padding: 1rem 2rem;
     border-radius: 1rem;
     color: var(--white);
 }
@@ -71,6 +76,7 @@ input {
 
 .control--input::placeholder {
     text-align: center;
+    opacity: 0.5;
 }
 
 .control--button {
@@ -87,6 +93,23 @@ input {
 }
 
 .item--name {
-    margin-left: 1.5rem;
+    margin-left: 0.5rem;
     margin-bottom: 0.5rem;
+}
+
+.item--index {
+    font-size: 0.7rem;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.item--section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item--img {
+    width: 20px;
+    margin-right: 0.5rem;
 }

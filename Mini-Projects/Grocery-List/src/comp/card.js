@@ -21,13 +21,13 @@ const Card = ({ appList, onClickDelete, onClickEdit }) => {
                   src={pen}
                   className="item--img"
                   alt="edit"
-                  onClick={onClickEdit}
+                  onClick={() => onClickEdit(index)}
                 />
                 <img
                   src={trash}
                   className="item--img"
                   alt="delete"
-                  onClick={onClickDelete}
+                  onClick={() => onClickDelete(index)}
                 />
               </div>
             </div>

@@ -4,12 +4,12 @@
 
 ## App Feature
 
-1. 
+1. Use React 18
+2. Pure Css
 
 ### App Components
 
 1. Generative Card
-2. Pure Css
 3. React Use State Hook
 4. Navigation Bar
 5. Ui Design Daily <a href="">Link</a>

@@ -15,11 +15,24 @@ function App() {
   function getInput(changedValue) {
     inputValue = changedValue;
   }
+
+  function editButton(itemIndex) {
+    alert(itemIndex);
+  }
+
+  function deleteButton(itemIndex) {
+    alert(itemIndex);
+  }
+
   return (
     <div className="app">
       <h1 className="app--title">Grocery List</h1>
       <ControllerBar onClickHandler={add} onChangeHandler={getInput} />
-      <Card appList={appList} />
+      <Card
+        appList={appList}
+        onClickEdit={editButton}
+        onClickDelete={deleteButton}
+      />
     </div>
   );
 }

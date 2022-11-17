@@ -4,7 +4,18 @@ import React from "react";
 import trash from "../assets/trash.png";
 import pen from "../assets/pen.png";
 
-const Card = ({ appList, onClickDelete, onClickEdit, isEditing, editIndex }) => {
+//comp
+import EditSection from "./editSection";
+
+const Card = ({
+  appList,
+  onClickDelete,
+  onClickEdit,
+  isEditing,
+  editIndex,
+}) => {
+  function add(){}
+  function getInput(){}
   return (
     <div className="item">
       <h1 className="item--number"># of Items:: {appList.length}</h1>
@@ -30,7 +41,9 @@ const Card = ({ appList, onClickDelete, onClickEdit, isEditing, editIndex }) => 
                 />
               </div>
             </div>
-            {isEditing && index === editIndex && <h1>Text</h1>}
+            {isEditing && index === editIndex && (
+              <EditSection onClickHandler={add} onChangeHandler={getInput} />
+            )}
             {!(index + 1 === appList.length) && <div className="hr-line"></div>}
           </div>
         ))}

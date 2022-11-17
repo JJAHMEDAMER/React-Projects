@@ -4,9 +4,24 @@ import React from "react";
 import Card from "./comp/card";
 import ControllerBar from "./comp/controller";
 
+//Load Data
+
+function getLocalStorage() {
+  const data = localStorage.getItem("appList");
+  if (data) {
+    return JSON.parse(data);
+  } else {
+    return [];
+  }
+}
+
 function App() {
-  const [appList, setAppList] = React.useState(["eggs", "milk", "bread"]);
+  const [appList, setAppList] = React.useState(getLocalStorage);
   const [editIndex, setEditIndex] = React.useState(-1);
+
+  React.useEffect(() => {
+    localStorage.setItem("appList", JSON.stringify(appList));
+  }, [appList]);
 
   function add() {
     setAppList([...appList, inputValue]);

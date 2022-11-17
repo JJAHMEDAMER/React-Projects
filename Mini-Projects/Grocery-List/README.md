@@ -11,6 +11,7 @@ An app that helps you remember the items to shop for, even if you've left or los
 3. Add items
 4. delete Items
 5. Edit Item
+6. Read and write to local storage
 
 ### App Components
 
@@ -18,6 +19,7 @@ An app that helps you remember the items to shop for, even if you've left or los
 2. React Use State Hook
 3. Input Bar
 4. Edit Bar
+5. Local Storage Api
 
 ### Web Page
 

@@ -18,7 +18,11 @@ function App() {
   }
 
   function editButton(itemIndex) {
-    setEditIndex(itemIndex);
+    if (itemIndex === editIndex) {
+      setEditIndex(-1);
+    } else {
+      setEditIndex(itemIndex);
+    }
   }
 
   function deleteButton(itemIndex) {

@@ -1,4 +1,5 @@
 # Grocery List
+
 ### React App
 
 An app that helps you remember the items to shop for, even if you've left or lost your list on the way to the store.
@@ -22,18 +23,19 @@ An app that helps you remember the items to shop for, even if you've left or los
 
 <div align="center">
 <h3> Grocery List Webpage View </h3>
-<img src="./webpage.png" width="500px">
+<img src="./webpage.png" width=700>
 </div>
-<div float="left">
-<div align="center">
-<h3> Empty Grocery List Webpage View </h3>
-<img src="./webpage-1.png" width="250px">
-</div>
-<div align="center">
-<h3> Edit Grocery List Webpage View </h3>
-<img src="./webpage-2.png" width="250px">
-</div>
-</div>
+
+<table align="center">
+  <tr>
+    <td align="center"><h3>Empty Grocery List Webpage View</h3></td>
+     <td align="center"><h3>Edit Grocery List Webpage View</h3></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="./webpage-1.png" width=350></td>
+    <td align="center"><img src="./webpage-2.png" width=350></td>
+  </tr>
+ </table>
 
 ### Color Pallet
 
@@ -47,6 +49,7 @@ An app that helps you remember the items to shop for, even if you've left or los
 ```
 
 ### Fonts
+
 ```html
 <!-- Fonts Poppins -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />

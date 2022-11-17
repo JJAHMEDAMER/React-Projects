@@ -51,7 +51,7 @@ const Card = ({
                 />
               </div>
             </div>
-            {isEditing && index === editIndex && (
+            {index === editIndex && (
               <EditSection
                 onClickHandler={() => edit(index)}
                 onChangeHandler={getInput}

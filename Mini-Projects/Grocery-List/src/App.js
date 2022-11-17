@@ -6,7 +6,6 @@ import ControllerBar from "./comp/controller";
 
 function App() {
   const [appList, setAppList] = React.useState(["eggs", "milk", "bread"]);
-  const [isEditing, setIsEditing] = React.useState(true);
   const [editIndex, setEditIndex] = React.useState(-1);
 
   function add() {
@@ -19,7 +18,6 @@ function App() {
   }
 
   function editButton(itemIndex) {
-    setIsEditing(!isEditing);
     setEditIndex(itemIndex);
   }
 
@@ -37,7 +35,6 @@ function App() {
           appList={appList}
           onClickEdit={editButton}
           onClickDelete={deleteButton}
-          isEditing={isEditing}
           editIndex={editIndex}
           setAppList={setAppList}
         />

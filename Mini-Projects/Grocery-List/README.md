@@ -22,16 +22,16 @@ An app that helps you remember the items to shop for, even if you've left or los
 
 <div align="center">
 <h3> Grocery List Webpage View </h3>
-<img src="./webpage.png">
+<img src="./webpage.png" width="500px">
 </div>
-<div align="center">
+<div float="left">
 <div align="center">
 <h3> Empty Grocery List Webpage View </h3>
-<img src="./webpage-1.png">
+<img src="./webpage-1.png" width="250px">
 </div>
 <div align="center">
 <h3> Edit Grocery List Webpage View </h3>
-<img src="./webpage-2.png">
+<img src="./webpage-2.png" width="250px">
 </div>
 </div>
 

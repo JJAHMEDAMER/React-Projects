@@ -13,9 +13,19 @@ const Card = ({
   onClickEdit,
   isEditing,
   editIndex,
+  setAppList,
 }) => {
-  function add(){}
-  function getInput(){}
+  let editValue;
+  function getInput(changedValue) {
+    editValue = changedValue;
+  }
+
+  function edit(index) {
+    let newList = [...appList];
+    newList[index] = editValue;
+    setAppList(newList);
+  }
+
   return (
     <div className="item">
       <h1 className="item--number"># of Items:: {appList.length}</h1>
@@ -42,7 +52,10 @@ const Card = ({
               </div>
             </div>
             {isEditing && index === editIndex && (
-              <EditSection onClickHandler={add} onChangeHandler={getInput} />
+              <EditSection
+                onClickHandler={() => edit(index)}
+                onChangeHandler={getInput}
+              />
             )}
             {!(index + 1 === appList.length) && <div className="hr-line"></div>}
           </div>

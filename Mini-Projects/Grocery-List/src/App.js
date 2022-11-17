@@ -27,7 +27,7 @@ function App() {
     let newList = appList.filter((item, index) => index !== itemIndex);
     setAppList(newList);
   }
-  
+
   return (
     <div className="app">
       <h1 className="app--title">Grocery List</h1>
@@ -39,6 +39,7 @@ function App() {
           onClickDelete={deleteButton}
           isEditing={isEditing}
           editIndex={editIndex}
+          setAppList={setAppList}
         />
       )}
     </div>

@@ -25,3 +25,9 @@
 # Base Project
 **/001-base-project
 **/002-base-project-no-node_modules
+
+# Vscode
+.vscode
+
+#vercel
+**/.vercel

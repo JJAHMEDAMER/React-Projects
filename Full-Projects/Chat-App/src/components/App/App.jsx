@@ -1,6 +1,12 @@
 import { useEffect } from 'react';
 import { myFirebase } from 'service';
 
+// Route
+import { Route, Switch } from 'react-router-dom';
+
+// Components
+import { Chat, Login, SignUp } from "components"
+
 export const App = () => {
 
     useEffect(() => {
@@ -9,5 +15,12 @@ export const App = () => {
             console.log(user);
         })
     }, [])
-    return <>Hello from Batman</>
+
+    return <>
+        <Switch>
+            <Route path="/login" component={Login} />
+            <Route path="/signUp" component={SignUp} />
+            <Route exact path="/" component={Chat} />
+        </Switch>
+    </>
 };

@@ -1,3 +1,49 @@
+import { Formik, Form } from "formik";
+import { defaultValues, validationSchema } from "./formikConfig";
+
+//Components
+import { FormField } from "components/formField";
+
+//Router
+import { useHistory } from "react-router-dom";
+
 export const SignUp = () => {
-  return <div>SignUp</div>;
+  const history = useHistory();
+
+  const signUpFunction = ({ email, userName, password }, { setSubmitting }) => {
+    // All the variables are formik Variables
+    console.log({ x: email, y: password, z: userName });
+  };
+
+  return (
+    <div className="auth-form">
+      <h1>SignUp</h1>
+      <Formik
+        onSubmit={signUpFunction}
+        validateOnMount={true}
+        initialValues={defaultValues}
+        validationSchema={validationSchema}
+      >
+        {({ isValid, isSubmitting }) => (
+          <Form>
+            <FormField name="userName" label="Username" />
+            <FormField name="email" label="Email" type="email" />
+            <FormField name="password" label="Password" type="password" />
+            <FormField
+              name="verifyPassword"
+              label="Verify Password"
+              type="password"
+            />
+            <p>
+              Already have an account?{" "}
+              <span className="auth-link" onClick={() => history.push("login")}>
+                Login
+              </span>
+            </p>
+            <button type="submit">Submit</button>
+          </Form>
+        )}
+      </Formik>
+    </div>
+  );
 };

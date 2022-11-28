@@ -16,11 +16,11 @@ export const App = () => {
         })
     }, [])
 
-    return <>
+    return <div className='app'>
         <Switch>
             <Route path="/login" component={Login} />
             <Route path="/signUp" component={SignUp} />
             <Route exact path="/" component={Chat} />
         </Switch>
-    </>
+    </div>
 };

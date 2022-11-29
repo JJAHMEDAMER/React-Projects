@@ -12,6 +12,7 @@ export const SignUp = () => {
 
   const signUpFunction = ({ email, userName, password }, { setSubmitting }) => {
     // All the variables are formik Variables
+    // Var names must be ase formField names
     console.log({ x: email, y: password, z: userName });
   };
 
@@ -34,13 +35,15 @@ export const SignUp = () => {
               label="Verify Password"
               type="password"
             />
-            <p>
+            <button type="submit" disabled={isSubmitting || !isValid}>
+              Sign Up
+            </button>
+            <p className="auth-link-container">
               Already have an account?{" "}
               <span className="auth-link" onClick={() => history.push("login")}>
                 Login
               </span>
             </p>
-            <button type="submit">Submit</button>
           </Form>
         )}
       </Formik>

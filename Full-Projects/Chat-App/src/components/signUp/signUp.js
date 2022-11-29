@@ -6,6 +6,7 @@ import { FormField } from "components/formField";
 
 //Router
 import { useHistory } from "react-router-dom";
+import { myFirebase } from "service";
 
 export const SignUp = () => {
   const history = useHistory();
@@ -13,7 +14,11 @@ export const SignUp = () => {
   const signUpFunction = ({ email, userName, password }, { setSubmitting }) => {
     // All the variables are formik Variables
     // Var names must be ase formField names
-    console.log({ x: email, y: password, z: userName });
+    //console.log({ x: email, y: password, z: userName });
+
+    myFirebase.auth
+      .createUserWithEmailAndPassword(email, password)
+      .finally(setSubmitting(true));
   };
 
   return (

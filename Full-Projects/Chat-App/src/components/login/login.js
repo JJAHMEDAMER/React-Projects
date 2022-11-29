@@ -9,13 +9,19 @@ import { useHistory } from "react-router-dom";
 // Formik Config
 import { defaultValues, validationSchema } from "./formikConfig";
 
+// Firebase
+import { myFirebase } from "service";
+
 export const Login = () => {
   const history = useHistory();
 
-  const loginFunction = ({ email, password, userName }) => {
+  const loginFunction = ({ email, password, userName }, { setSubmitting }) => {
     // Var names must be ase formField names
-    alert("hi");
-    console.log(email, userName, password);
+    //console.log(email, userName, password);
+
+    myFirebase.auth
+      .signInWithEmailAndPassword(email, password)
+      .finally(setSubmitting(false));
   };
 
   return (
@@ -32,7 +38,7 @@ export const Login = () => {
             <FormField name="userName" label="Username" />
             <FormField name="email" label="email" type="email" />
             <FormField name="password" label="Password" type="password" />
-            <button type="submit" disabled={!isValid}>
+            <button type="submit" disabled={!isValid || isSubmitting}>
               Login
             </button>
             <div className="auth-link-container">

@@ -21,12 +21,12 @@ export const TrendingView = () => {
 
     useEffect(() => {
         // getTrendingRes();
-        setTrendingApiRes(fakeData)
+        setTrendingApiRes([...fakeData, ...fakeData, ...fakeData, ...fakeData, ...fakeData, ...fakeData])
     }, [])
 
-    return <div>
-        <h1 onClick={getTrendingRes}>Trending</h1>
-        <div>
+    return <div className="trending--view">
+        <h1 className="trending--view--title" onClick={getTrendingRes}>Trending</h1>
+        <div className="trending--view--scroll">
             {trendingApiRes.map((item) => (<Card {...item} key={item.id} />))}
         </div>
     </div>

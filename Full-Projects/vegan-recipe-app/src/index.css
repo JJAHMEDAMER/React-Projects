@@ -1,7 +1,8 @@
-:root{
-    --card-border-radius: 2rem;
-    --card-size: 500px;
+:root {
+    --card-border-radius: 1rem;
+    --card-size: 200px;
 }
+
 *,
 *::before,
 *::after {
@@ -12,6 +13,8 @@
 
 html {
     font-family: "Poppins";
+    display: flex;
+    justify-content: center;
 }
 
 button,
@@ -19,53 +22,85 @@ input {
     font-family: inherit;
 }
 
-body{
-    margin: 0 9rem;
-    display: flex;
+body {
+    width: 35rem;
 }
 
-.navbar{
+.navbar {
     display: flex;
     align-items: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
-.navbar--logo{
+.navbar--logo {
     width: 110px;
     margin-right: 10px;
 }
 
-.navbar--title{
+.navbar--title {
     font-size: 2.5rem;
     font-weight: 600;
 }
 
-.card{
+.card {
     position: relative;
     display: flex;
     justify-content: center;
     border-radius: var(--card-border-radius);
-    width: var(--card-size);
+    min-width: var(--card-size);
     height: var(--card-size);
+
+    scroll-snap-align: start;
 }
 
-.card--title{
+.card--title {
     position: absolute;
-    bottom : 70px;
+    bottom: 20px;
     color: aliceblue;
+    font-size: 1rem;
+    padding: 0 20px;
 }
 
-.card--image{
+.card--image {
     object-fit: cover;
     border-radius: var(--card-border-radius);
     width: 100%
 }
 
-.card--gradient{
+.card--gradient {
     position: absolute;
     width: 100%;
     height: 100%;
     border-radius: var(--card-border-radius);
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.667) 0%, rgba(255, 255, 255, 0) 40%);}
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.667) 0%, rgba(255, 255, 255, 0) 40%);
+}
 
+
+.trending--view {}
+
+.trending--view--title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+}
+
+.trending--view--scroll {
+    display: flex;
+    gap: 15px;
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.trending--view--scroll::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.trending--view--scroll {
+    /* IE and Edge */
+    -ms-overflow-style: none;
+    /* Firefox */
+    scrollbar-width: none;
+}

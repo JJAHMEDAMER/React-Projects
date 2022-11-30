@@ -1,5 +1,6 @@
 import axios from "axios";
 
+// Create user on chatengine.io
 const createUser = async (req, res) => {
   const { userId, userName } = req.body;
 

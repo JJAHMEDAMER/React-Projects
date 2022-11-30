@@ -6,7 +6,11 @@ import { FormField } from "components/formField";
 
 //Router
 import { useHistory } from "react-router-dom";
+
+// Firebase
 import { myFirebase } from "service";
+
+//
 
 export const SignUp = () => {
   const history = useHistory();
@@ -18,6 +22,25 @@ export const SignUp = () => {
 
     myFirebase.auth
       .createUserWithEmailAndPassword(email, password)
+      .then((res) => {
+        if (res?.user?.uid) {
+          fetch("/api/createUser", {
+            method: "post",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              userName,
+              userId: res.user.uid,
+            }),
+          }).then(() => {
+            myFirebase.firestore
+              .collection("chatUsers")
+              .doc(res.user.uid)
+              .set({ userName, avatar: "" });
+          });
+        }
+      })
       .finally(setSubmitting(true));
   };
 

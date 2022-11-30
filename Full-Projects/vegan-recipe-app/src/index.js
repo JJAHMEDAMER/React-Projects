@@ -1,6 +1,9 @@
 import React from "react";
 import ReactDom from "react-dom/client"; // React 18
 
+// Style 
+import "./index.css";
+
 // App
 import { App } from "./App";
 

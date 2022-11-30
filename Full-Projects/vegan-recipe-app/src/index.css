@@ -23,7 +23,7 @@ input {
     font-family: inherit;
 }
 
-.v-spacing{
+.v-spacing {
     height: 50px;
 }
 
@@ -117,4 +117,42 @@ body {
     -ms-overflow-style: none;
     /* Firefox */
     scrollbar-width: none;
+}
+
+.categories--all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.categories {
+    width: 85px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.categories--circle {
+    background: #000;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.categories--circle:hover{
+    background: rgb(52, 52, 52);
+
+}
+
+.categories--title{
+    font-size: 0.8rem;
+    font-weight: 900;
+    letter-spacing: 1.5px;
 }

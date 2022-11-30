@@ -27,9 +27,9 @@ export const TrendingView = () => {
         getTrendingRes();
     }, [])
 
-    return <div className="trending--view">
-        <h1 className="trending--view--title">Trending</h1>
-        <div className="trending--view--scroll">
+    return <div className="carousel--view">
+        <h1 className="carousel--view--title">Trending</h1>
+        <div className="carousel--view--scroll">
             {trendingApiRes.map((item) => (<Card {...item} key={item.id} />))}
         </div>
     </div>

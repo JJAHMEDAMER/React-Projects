@@ -14,7 +14,7 @@ export const VeganPicksView = () => {
         if (veganDataFromStorage) {
             setVeganApiRes(JSON.parse(veganDataFromStorage))
         } else {
-            const URL = `https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_SPOONACULAR_API_KEY}&number=9`
+            const URL = `https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_SPOONACULAR_API_KEY}&number=9&tags=vegetarian`
             const apiStringyRes = await fetch(URL)
             const apiJsonRes = await apiStringyRes.json()
             console.log(apiJsonRes.recipes)
@@ -28,7 +28,7 @@ export const VeganPicksView = () => {
     }, [])
 
     return <div className="carousel--view">
-        <h1 className="carousel--view--title">Vegan Picks</h1>
+        <h1 className="carousel--view--title">Our Vegan Picks</h1>
         <div className="carousel--view--scroll">
             {veganApiRes.map((item) => (<Card {...item} key={item.id} />))}
         </div>

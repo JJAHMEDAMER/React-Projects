@@ -1,1 +1,3 @@
-export * from "./navbar"
+export * from "./navbar";
+export * from "./veganPicksView";
+export * from "./trendingView";

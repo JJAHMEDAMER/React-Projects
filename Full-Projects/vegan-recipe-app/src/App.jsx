@@ -7,11 +7,14 @@ import { Navbar, CategoriesButton, Search } from "./components";
 import { HomePage, CuisinePage } from "./pages"
 
 export const App = () => {
+  function getInput(value) {
+    alert(value)
+  }
   return <div>
     <div className="v-spacing"></div>
     <Navbar />
     <div className="v-spacing"></div>
-    <Search/>
+    <Search onChangeHandler={getInput} />
     <div className="v-spacing"></div>
 
     <CategoriesButton />

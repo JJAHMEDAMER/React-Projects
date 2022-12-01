@@ -1,11 +1,16 @@
 import { useState, useEffect } from "react"
 
+//routes
+import {useParams} from "react-router-dom"
+
 //comp 
 import { GridCard } from "../components"
 
 //fake data
 import { fakeData } from "../fakeData"
 export const CuisinePage = () => {
+
+    const queryParamFromRouting = useParams()
 
     const [cuisineApiRes, setCuisineAPiRes] = useState([])
 
@@ -26,12 +31,13 @@ export const CuisinePage = () => {
     }
 
     useEffect(() => {
-        // getCuisineRes("thai")
+        // getCuisineRes(queryParamFromRouting)
         setCuisineAPiRes([...fakeData, ...fakeData, ...fakeData, ...fakeData, ...fakeData, ...fakeData, ...fakeData, ...fakeData, ...fakeData,])
-    }, [])
+        console.log(queryParamFromRouting.query)
+    }, [queryParamFromRouting.query])
 
     return <div className="cuisine">
-        <p className="cuisine--title">Thai</p>
+        <p className="cuisine--title">{queryParamFromRouting.query}</p>
         <div className="v-spacing"></div>
         <div className="cuisine--grid">
             {cuisineApiRes.map(item => <GridCard {...item} key={item.id} />)}

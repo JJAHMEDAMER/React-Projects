@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react"
 
 //routes
-import {useParams} from "react-router-dom"
+import { useParams } from "react-router-dom"
 
 //comp 
 import { GridCard } from "../components"
 
 //fake data
-import { fakeData } from "../fakeData"
+// import { fakeData } from "../fakeData"
 export const CuisinePage = () => {
 
     const queryParamFromRouting = useParams()
@@ -31,8 +31,8 @@ export const CuisinePage = () => {
     }
 
     useEffect(() => {
-        // getCuisineRes(queryParamFromRouting)
-        setCuisineAPiRes([...fakeData, ...fakeData, ...fakeData, ...fakeData, ...fakeData, ...fakeData, ...fakeData, ...fakeData, ...fakeData,])
+        getCuisineRes(queryParamFromRouting.query)
+        // setCuisineAPiRes([...fakeData, ...fakeData, ...fakeData, ...fakeData, ...fakeData, ...fakeData, ...fakeData, ...fakeData, ...fakeData,])
         console.log(queryParamFromRouting.query)
     }, [queryParamFromRouting.query])
 

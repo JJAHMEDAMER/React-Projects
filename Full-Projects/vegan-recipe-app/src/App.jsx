@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom"
 import { Navbar, CategoriesButton, Search } from "./components";
 
 // Pages
-import { HomePage, CuisinePage } from "./pages"
+import { HomePage, CuisinePage, RecipeDetails } from "./pages"
 
 export const App = () => {
   return <div>
@@ -18,6 +18,7 @@ export const App = () => {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/cuisine/:query" element={<CuisinePage />} />
+      <Route path="/recipe-details/:recipe" element={<RecipeDetails />} />
     </Routes>
     <div className="v-spacing"></div>
   </div>;

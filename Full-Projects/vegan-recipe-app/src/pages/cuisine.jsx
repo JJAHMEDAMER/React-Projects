@@ -38,7 +38,6 @@ export const CuisinePage = () => {
 
     return <div className="cuisine">
         <p className="cuisine--title">{queryParamFromRouting.query}</p>
-        <div className="v-spacing"></div>
         <div className="cuisine--grid">
             {cuisineApiRes.map(item => <GridCard {...item} key={item.id} />)}
         </div>

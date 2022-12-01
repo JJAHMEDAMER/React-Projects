@@ -18,5 +18,6 @@ export const App = () => {
       <Route path="/" element={<HomePage />} />
       <Route path="/cuisine/:query" element={<CuisinePage />} />
     </Routes>
+    <div className="v-spacing"></div>
   </div>;
 }; 

@@ -180,6 +180,8 @@ body {
 .cuisine--title{
     font-family: "Pacifico";
     font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .cuisine--grid{
@@ -198,12 +200,11 @@ body {
 .gridCard--image{
     width: 100%;
     object-fit: cover;
-    border-radius: 1rem;
+    border-radius: 16px;
 }
 
 .gridCard--title{
     font-size: 0.9rem;
     font-weight: 400;
-    padding: 0 0.5rem;
-
+    padding: 0 10px;
 }

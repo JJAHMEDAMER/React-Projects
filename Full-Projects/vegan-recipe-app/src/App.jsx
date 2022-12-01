@@ -4,15 +4,19 @@ import { Routes, Route } from "react-router-dom"
 import { Navbar, CategoriesButton } from "./components";
 
 // Pages
-import { HomePage } from "./pages"
+import { HomePage, CuisinePage } from "./pages"
 
 export const App = () => {
   return <div>
+    <div className="v-spacing"></div>
     <Navbar />
+    <div className="v-spacing"></div>
+
     <CategoriesButton />
     <div className="v-spacing"></div>
     <Routes>
       <Route path="/" element={<HomePage />} />
+      <Route path="/cuisine/:query" element={<CuisinePage />} />
     </Routes>
   </div>;
 }; 

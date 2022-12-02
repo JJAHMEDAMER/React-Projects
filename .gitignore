@@ -32,3 +32,6 @@
 
 #vercel
 **/.vercel
+
+# dev
+**/00*

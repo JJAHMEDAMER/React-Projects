@@ -80,13 +80,18 @@ body {
     transition-duration: 250ms;
     transition-timing-function: ease-in-out; */
     --transition: all 250ms ease-in-out;
+
+    /* Container Width*/
+    --container-width-lg: 75%;
+    --container-width-md: 86%;
+    --container-width-sm: 90%;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     display: none;
 }
 
@@ -160,4 +165,26 @@ button:hover {
 .sec-btn:hover {
     color: var(--white-color);
     background-color: var(--prim-color-var);
+}
+
+
+/* Media Quiry */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: var(--container-width-md);
+    }
+
+    .section {
+        margin-top: 6rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: var(--container-width-sm);
+    }
+
+    .section {
+        margin-top: 4rem;
+    }
 }

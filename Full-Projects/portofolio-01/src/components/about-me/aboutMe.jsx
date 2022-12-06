@@ -10,14 +10,17 @@ import "./aboutMe.css"
 import imgSection from "../../assets/me-about.jpg"
 
 export const AboutMe = () => {
-    return <div className="section">
+    return <div className="section about--section">
         <div className="section--intro">Get To Know Me</div>
         <div className="section--title">About Me</div>
+
         <div className="about">
+            
             <div className="about--img">
                 <div className="img--bg"></div>
                 <img src={imgSection} alt="me" />
             </div>
+
             <div className="about--content">
                 <div className="about--cards">
                     <div className="about--single--card">

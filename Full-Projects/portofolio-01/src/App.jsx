@@ -1,9 +1,10 @@
 // Components
-import { Hero, AboutMe } from "./components"
+import { Hero, AboutMe, Experience } from "./components"
 
 export const App = () => {
   return <div>
     <Hero />
     <AboutMe />
+    <Experience />
   </div>;
 };

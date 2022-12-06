@@ -1,0 +1,76 @@
+.experience--card--container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.experience--card {
+    min-width: 100%;
+
+    background-color: var(--bg-color);
+    padding: 2rem 4rem;
+
+    border-radius: 2rem;
+    border-style: solid;
+    border-color: var(--prim-color);
+    border-width: 1px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 4rem;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.experience--card--title {
+    grid-column-start: 1;
+    grid-column-end: -1;
+
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+
+    color: var(--prim-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.experience--card--element {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.skill {
+    font-size: 1.2rem;
+}
+
+.level {
+    font-size: 1rem;
+}
+
+.experience--card--element>.icon {
+    font-size: 1.5rem;
+    color: var(--prim-color);
+}
+
+
+@media screen and (max-width: 1024px) {
+    .experience--card{
+        gap: 2rem 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .experience--card--container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .experience--card{
+        gap: 2rem 0;
+    }
+}

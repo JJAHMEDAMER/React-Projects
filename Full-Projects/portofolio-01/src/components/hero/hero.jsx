@@ -8,16 +8,18 @@ import "./hero.css"
 import heroImg from "../../assets/me.png"
 
 export const Hero = () => {
-    return <div className="section">
+    return <div className="section hero--section">
         <h2 className="section--intro">Hello I'm</h2>
         <h1 className="section--title">Ahmed Amer</h1>
         <h3 className="section--tagline">Fullstack Developer</h3>
         <div className="v-3rem"></div>
+
         <div className="hero--btns">
             <button className="sec-btn">Download CV</button>
             <button> Let's Talk</button>
         </div>
         <div className="v-3rem"></div>
+        
         <div className="hero--content">
             <div className="hero--icons">
                 <FaLinkedin />

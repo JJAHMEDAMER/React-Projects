@@ -82,9 +82,9 @@ body {
     --transition: all 250ms ease-in-out;
 
     /* Container Width*/
-    --container-width-lg: 75%;
-    --container-width-md: 86%;
-    --container-width-sm: 90%;
+    --section-width-lg: 75%;
+    --section-width-md: 86%;
+    --section-width-sm: 90%;
 }
 
 html {
@@ -96,6 +96,7 @@ html {
 }
 
 body {
+    height: 100vh;
     background: var(--bg-color);
     color: var(--white-color);
     font-family: 'Poppins', sans-serif;
@@ -103,15 +104,21 @@ body {
 }
 
 .v-2rem {
-    height: 2rem;
+    min-height: 2rem;
 }
 
 .v-3rem {
-    height: 3rem;
+    min-height: 3rem;
 }
 
 .section {
     margin-top: 8rem;
+    width: var(--section-width-lg);
+    /* Center section to body*/
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Center section elements to section*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -170,21 +177,15 @@ button:hover {
 
 /* Media Quiry */
 @media screen and (max-width: 1024px) {
-    .container {
-        width: var(--container-width-md);
-    }
-
     .section {
         margin-top: 6rem;
+        width: var(--section-width-md);
     }
 }
 
 @media screen and (max-width: 600px) {
-    .container {
-        width: var(--container-width-sm);
-    }
-
     .section {
         margin-top: 4rem;
+        width: var(--section-width-sm);
     }
 }

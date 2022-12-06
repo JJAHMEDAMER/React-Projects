@@ -82,6 +82,14 @@ body {
     --transition: all 250ms ease-in-out;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
 body {
     background: var(--bg-color);
     color: var(--white-color);

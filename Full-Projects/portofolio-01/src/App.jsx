@@ -1,3 +1,8 @@
+// Components
+import { Hero } from "./components"
+
 export const App = () => {
-  return <h1>Hello App</h1>;
+  return <div>
+    <Hero />
+  </div>;
 };

@@ -1,0 +1,2 @@
+// Comp
+export * from "./hero";

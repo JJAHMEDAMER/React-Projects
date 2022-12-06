@@ -7,18 +7,18 @@
 
 
 .about--img>.img--bg {
-    width: 25rem;
-    height: 25rem;
+    width: 22rem;
+    aspect-ratio: 1/1;
     border-radius: 2rem;
-    background: linear-gradient(var(--prim-color), #fff0);
+    background: linear-gradient(225deg, var(--prim-color), #fff0);
 
     position: absolute;
     transform: rotate(10deg);
 }
 
 .about--img>img {
-    width: 25rem;
-    height: 25rem;
+    width: 22rem;
+    aspect-ratio: 1/1;
     border-radius: 2rem;
     position: relative;
     transform: rotate(-10deg);
@@ -33,7 +33,7 @@
 
 .about--cards {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .about--single--card {
@@ -41,9 +41,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    width: 10rem;
-    height: 10rem;
+
+    width: 9.5rem;
+    aspect-ratio: 1/1;
     padding: 1.5rem;
+
     border-radius: 2rem;
     border-style: solid;
     border-width: 1px;
@@ -58,6 +60,7 @@
 
 .about--single--card>p {
     font-size: 0.6rem;
+    font-weight: 200;
 }
 
 .about--single--card>.icon {

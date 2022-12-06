@@ -15,7 +15,10 @@ select {
     border-width: 0;
 }
 
-/* Avoid text overflows */
+/* 
+    Avoid text overflows 
+    for very long words that is longer than the width of the parent container itself 
+*/
 
 p,
 h1,
@@ -37,6 +40,13 @@ a {
     text-decoration: none;
 }
 
+/* Image Default Values */
+
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
 /* 
     Add accessible line-height
     Improve text rendering 
@@ -52,4 +62,23 @@ body {
 html,
 body {
     height: 100%;
+}
+
+/****  APP CSS START  ****/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,800;0,900;1,200;1,400;1,600;1,800;1,900&display=swap');
+
+:root {
+    --bg-color: #1f1f38;
+    --bg-color-variant: #2c2c6c;
+    --prim-color: #4db5ff;
+    --prim-color-var: rgba(77, 181, 255, 0.4);
+    --white-color: #fff;
+    --trans-white-color: rgba(255, 255, 255, 0.6);
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--white-color);
+    font-family: 'Poppins', sans-serif;
+    background-image: url(./assets/bg-texture.png);
 }

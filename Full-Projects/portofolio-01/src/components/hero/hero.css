@@ -1,3 +1,115 @@
-.hero{
-    
+:root {
+    /* transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out; */
+    --transition: all 250ms ease-in-out;
+}
+
+.section {
+    margin-top: 8rem;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero>h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+}
+
+.hero>h2 {
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+
+.hero>h3 {
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: var(--trans-white-color);
+}
+
+.hero--btns {
+    display: flex;
+    gap: 1rem;
+}
+
+button {
+    padding: 0.8rem 2rem;
+    color: var(--bg-color);
+    background-color: var(--prim-color);
+
+    border-radius: 0.5rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--prim-color);
+
+    cursor: pointer;
+
+    transition: var(--transition);
+}
+
+button:hover {
+    background-color: var(--bg-color);
+    color: var(--prim-color);
+}
+
+.sec-btn {
+    background-color: var(--bg-color);
+    color: var(--prim-color);
+}
+
+.sec-btn:hover {
+    color: var(--white-color);
+    background-color: var(--prim-color-var);
+}
+
+.hero--content {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.hero--img {
+    width: 22rem;
+    padding: 1rem;
+    background: linear-gradient(var(--prim-color), #fff0);
+    border-radius: 50% 50% 0 0 / 11rem 11rem 0 0;
+}
+
+.hero--sroll--down {
+    writing-mode: vertical-rl;
+    letter-spacing: 2px;
+    color: var(--prim-color-var);
+}
+
+.hero--icons {
+    color: var(--prim-color-var);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.hero--icons>.line {
+    height: 1.5rem;
+    width: 0.15rem;
+    background-color: var(--prim-color-var);
+    border-radius: 0.75rem/0.075rem;
+}
+
+.hero--icons>* {
+    transform: scale(1.25);
+    transition: var(--transition);
+}
+
+.hero--icons>*:hover {
+    transform: scale(1.3);
+    color: var(--prim-color);
 }

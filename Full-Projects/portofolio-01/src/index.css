@@ -82,3 +82,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background-image: url(./assets/bg-texture.png);
 }
+
+.v-3rem{
+    height: 3rem;
+}

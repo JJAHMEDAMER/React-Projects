@@ -42,7 +42,7 @@ a {
 
 /* Image Default Values */
 
-img{
+img {
     width: 100%;
     object-fit: cover;
 }
@@ -74,6 +74,12 @@ body {
     --prim-color-var: rgba(77, 181, 255, 0.4);
     --white-color: #fff;
     --trans-white-color: rgba(255, 255, 255, 0.6);
+
+    /* Transiton */
+    /* transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out; */
+    --transition: all 250ms ease-in-out;
 }
 
 body {
@@ -83,6 +89,67 @@ body {
     background-image: url(./assets/bg-texture.png);
 }
 
-.v-3rem{
+.v-2rem {
+    height: 2rem;
+}
+
+.v-3rem {
     height: 3rem;
+}
+
+.section {
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section--intro {
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+
+.section--title {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.section--tagline {
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: var(--trans-white-color);
+
+}
+
+button {
+    padding: 0.8rem 2rem;
+    color: var(--bg-color);
+    background-color: var(--prim-color);
+
+    border-radius: 0.5rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--prim-color);
+
+    cursor: pointer;
+
+    transition: var(--transition);
+}
+
+button:hover {
+    background-color: var(--bg-color);
+    color: var(--prim-color);
+}
+
+.sec-btn {
+    background-color: var(--bg-color);
+    color: var(--prim-color);
+}
+
+.sec-btn:hover {
+    color: var(--white-color);
+    background-color: var(--prim-color-var);
 }

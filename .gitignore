@@ -38,5 +38,9 @@
 **/test*/
 **/test*
 
+# DO NOT IGNORE PATTERNS
+!**/testimonial*/
+!**/testimonial*
+
 # Upcoming Projects -m => ignore upcoming __proj_name__ project
 Full-Projects/social-media-app/

@@ -185,11 +185,27 @@ button:hover {
         margin-top: 6rem;
         width: var(--section-width-md);
     }
+
+    .section--intro {
+        margin-bottom: 0.4rem;
+    }
+
+    .section--title {
+        margin-bottom: 2rem;
+    }
 }
 
 @media screen and (max-width: 600px) {
     .section {
         margin-top: 4rem;
         width: var(--section-width-sm);
+    }
+
+    .section--intro {
+        margin-bottom: 0.2rem;
+    }
+
+    .section--title {
+        margin-bottom: 2rem;
     }
 }

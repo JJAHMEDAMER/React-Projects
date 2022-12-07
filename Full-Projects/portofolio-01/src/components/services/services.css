@@ -8,21 +8,26 @@
 .services {
     background: var(--bg-color-variant);
     border-radius: 0 0 4rem 4rem;
-    width: 100%;
     height: fit-content;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--prim-color);
 }
 
 .services--title {
     background-color: var(--prim-color);
     border-radius: 0 0 4rem 4rem;
-    padding: 2rem 0;
+    padding: 1.8rem 0 2rem;
 
     font-size: 1.2rem;
     font-weight: 600;
+    letter-spacing: 1.5px;
 
     display: flex;
     align-items: center;
     justify-content: center;
+
+    box-shadow: 0 7px 10px -7px rgba(47, 47, 47, 0.811);
 }
 
 .services--content {

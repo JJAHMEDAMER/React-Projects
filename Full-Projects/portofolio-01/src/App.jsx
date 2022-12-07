@@ -1,5 +1,5 @@
 // Components
-import { Hero, AboutMe, Experience, Services, Protfolio } from "./components"
+import { Hero, AboutMe, Experience, Services, Protfolio, Testimonials } from "./components"
 
 export const App = () => {
   return <div>
@@ -7,6 +7,7 @@ export const App = () => {
     <AboutMe />
     <Experience />
     <Services />
-    <Protfolio/>
+    <Protfolio />
+    <Testimonials />
   </div>;
 };

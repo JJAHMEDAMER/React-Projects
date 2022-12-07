@@ -1,3 +1,6 @@
+// Dependinces
+import { BsBookmarkCheckFill } from "react-icons/bs"
+
 // Styles
 import "./services.css"
 
@@ -10,37 +13,87 @@ export const Services = () => {
             <div className="services">
                 <h1 className="services--title">UI/UX Design</h1>
                 <div className="services--content">
-                    <p className="service--para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, in quos. Accusantium officia a quod impedit illo excepturi molestias reiciendis, ratione aliquam optio temporibus rem ipsa placeat distinctio, cumque vel.</p>
-                    <p className="service--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam totam expedita possimus commodi accusamus quas fugiat omnis, voluptatibus quae dignissimos nostrum laudantium soluta doloremque, error consequuntur qui, vero in porro.</p>
-                    <p className="service--para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, in quos. Accusantium officia a quod impedit illo excepturi molestias reiciendis, ratione aliquam optio temporibus rem ipsa placeat distinctio, cumque vel.</p>
-                    <p className="service--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam totam expedita possimus commodi accusamus quas fugiat omnis, voluptatibus quae dignissimos nostrum laudantium soluta doloremque, error consequuntur qui, vero in porro.</p>
-                    <p className="service--para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, in quos. Accusantium officia a quod impedit illo excepturi molestias reiciendis, ratione aliquam optio temporibus rem ipsa placeat distinctio, cumque vel.</p>
-                    <p className="service--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam totam expedita possimus commodi accusamus quas fugiat omnis, voluptatibus quae dignissimos nostrum laudantium soluta doloremque, error consequuntur qui, vero in porro.</p>
+                    <div className="service--point">
+                        <BsBookmarkCheckFill className="icon" />
+                        <p className="service--para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, in quos. Accusantium officia a quod impedit illo excepturi molestias reiciendis, ratione aliquam optio temporibus rem ipsa placeat distinctio, cumque vel.</p>
+                    </div>
+                    <div className="service--point">
+                        <BsBookmarkCheckFill className="icon" />
+                        <p className="service--para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, in quos. Accusantium officia a quod impedit illo excepturi molestias reiciendis, ratione aliquam optio temporibus rem ipsa placeat distinctio, cumque vel.</p>
+                    </div>
+                    <div className="service--point">
+                        <BsBookmarkCheckFill className="icon" />
+                        <p className="service--para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, in quos. Accusantium officia a quod impedit illo excepturi molestias reiciendis, ratione aliquam optio temporibus rem ipsa placeat distinctio, cumque vel.</p>
+                    </div>
+                    <div className="service--point">
+                        <BsBookmarkCheckFill className="icon" />
+                        <p className="service--para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, in quos. Accusantium officia a quod impedit illo excepturi molestias reiciendis, ratione aliquam optio temporibus rem ipsa placeat distinctio, cumque vel.</p>
+                    </div>
+                    <div className="service--point">
+                        <BsBookmarkCheckFill className="icon" />
+                        <p className="service--para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, in quos. Accusantium officia a quod impedit illo excepturi molestias reiciendis, ratione aliquam optio temporibus rem ipsa placeat distinctio, cumque vel.</p>
+                    </div>
+
                 </div>
             </div>
 
             <div className="services">
-                <h1 className="services--title">UI/UX Design</h1>
+                <h1 className="services--title">Web Development</h1>
                 <div className="services--content">
-                    <p className="service--para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, in quos. Accusantium officia a quod impedit illo excepturi molestias reiciendis, ratione aliquam optio temporibus rem ipsa placeat distinctio, cumque vel.</p>
-                    <p className="service--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam totam expedita possimus commodi accusamus quas fugiat omnis, voluptatibus quae dignissimos nostrum laudantium soluta doloremque, error consequuntur qui, vero in porro.</p>
-                    <p className="service--para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, in quos. Accusantium officia a quod impedit illo excepturi molestias reiciendis, ratione aliquam optio temporibus rem ipsa placeat distinctio, cumque vel.</p>
-                    <p className="service--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam totam expedita possimus commodi accusamus quas fugiat omnis, voluptatibus quae dignissimos nostrum laudantium soluta doloremque, error consequuntur qui, vero in porro.</p>
-                    <p className="service--para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, in quos. Accusantium officia a quod impedit illo excepturi molestias reiciendis, ratione aliquam optio temporibus rem ipsa placeat distinctio, cumque vel.</p>
-                    <p className="service--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam totam expedita possimus commodi accusamus quas fugiat omnis, voluptatibus quae dignissimos nostrum laudantium soluta doloremque, error consequuntur qui, vero in porro.</p>
+                    <div className="service--point">
+                        <BsBookmarkCheckFill className="icon" />
+                        <p className="service--para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, in quos. Accusantium officia a quod impedit illo excepturi molestias reiciendis, ratione aliquam optio temporibus rem ipsa placeat distinctio, cumque vel.</p>
+                    </div>
+                    <div className="service--point">
+                        <BsBookmarkCheckFill className="icon" />
+                        <p className="service--para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, in quos. Accusantium officia a quod impedit illo excepturi molestias reiciendis, ratione aliquam optio temporibus rem ipsa placeat distinctio, cumque vel.</p>
+                    </div>
+                    <div className="service--point">
+                        <BsBookmarkCheckFill className="icon" />
+                        <p className="service--para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, in quos. Accusantium officia a quod impedit illo excepturi molestias reiciendis, ratione aliquam optio temporibus rem ipsa placeat distinctio, cumque vel.</p>
+                    </div>
+                    <div className="service--point">
+                        <BsBookmarkCheckFill className="icon" />
+                        <p className="service--para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, in quos. Accusantium officia a quod impedit illo excepturi molestias reiciendis, ratione aliquam optio temporibus rem ipsa placeat distinctio, cumque vel.</p>
+                    </div>
+                    <div className="service--point">
+                        <BsBookmarkCheckFill className="icon" />
+                        <p className="service--para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, in quos. Accusantium officia a quod impedit illo excepturi molestias reiciendis, ratione aliquam optio temporibus rem ipsa placeat distinctio, cumque vel.</p>
+                    </div>
+                    <div className="service--point">
+                        <BsBookmarkCheckFill className="icon" />
+                        <p className="service--para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, in quos. Accusantium officia a quod impedit illo excepturi molestias reiciendis, ratione aliquam optio temporibus rem ipsa placeat distinctio, cumque vel.</p>
+                    </div>
+                    <div className="service--point">
+                        <BsBookmarkCheckFill className="icon" />
+                        <p className="service--para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, in quos. Accusantium officia a quod impedit illo excepturi molestias reiciendis, ratione aliquam optio temporibus rem ipsa placeat distinctio, cumque vel.</p>
+                    </div>
                 </div>
             </div>
 
-
             <div className="services">
-                <h1 className="services--title">UI/UX Design</h1>
+                <h1 className="services--title">Content Creation</h1>
                 <div className="services--content">
-                    <p className="service--para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, in quos. Accusantium officia a quod impedit illo excepturi molestias reiciendis, ratione aliquam optio temporibus rem ipsa placeat distinctio, cumque vel.</p>
-                    <p className="service--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam totam expedita possimus commodi accusamus quas fugiat omnis, voluptatibus quae dignissimos nostrum laudantium soluta doloremque, error consequuntur qui, vero in porro.</p>
-                    <p className="service--para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, in quos. Accusantium officia a quod impedit illo excepturi molestias reiciendis, ratione aliquam optio temporibus rem ipsa placeat distinctio, cumque vel.</p>
-                    <p className="service--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam totam expedita possimus commodi accusamus quas fugiat omnis, voluptatibus quae dignissimos nostrum laudantium soluta doloremque, error consequuntur qui, vero in porro.</p>
-                    <p className="service--para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, in quos. Accusantium officia a quod impedit illo excepturi molestias reiciendis, ratione aliquam optio temporibus rem ipsa placeat distinctio, cumque vel.</p>
-                    <p className="service--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam totam expedita possimus commodi accusamus quas fugiat omnis, voluptatibus quae dignissimos nostrum laudantium soluta doloremque, error consequuntur qui, vero in porro.</p>
+                    <div className="service--point">
+                        <BsBookmarkCheckFill className="icon" />
+                        <p className="service--para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, in quos. Accusantium officia a quod impedit illo excepturi molestias reiciendis, ratione aliquam optio temporibus rem ipsa placeat distinctio, cumque vel.</p>
+                    </div>
+                    <div className="service--point">
+                        <BsBookmarkCheckFill className="icon" />
+                        <p className="service--para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, in quos. Accusantium officia a quod impedit illo excepturi molestias reiciendis, ratione aliquam optio temporibus rem ipsa placeat distinctio, cumque vel.</p>
+                    </div>
+                    <div className="service--point">
+                        <BsBookmarkCheckFill className="icon" />
+                        <p className="service--para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, in quos. Accusantium officia a quod impedit illo excepturi molestias reiciendis, ratione aliquam optio temporibus rem ipsa placeat distinctio, cumque vel.</p>
+                    </div>
+                    <div className="service--point">
+                        <BsBookmarkCheckFill className="icon" />
+                        <p className="service--para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, in quos. Accusantium officia a quod impedit illo excepturi molestias reiciendis, ratione aliquam optio temporibus rem ipsa placeat distinctio, cumque vel.</p>
+                    </div>
+                    <div className="service--point">
+                        <BsBookmarkCheckFill className="icon" />
+                        <p className="service--para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, in quos. Accusantium officia a quod impedit illo excepturi molestias reiciendis, ratione aliquam optio temporibus rem ipsa placeat distinctio, cumque vel.</p>
+                    </div>
                 </div>
             </div>
 

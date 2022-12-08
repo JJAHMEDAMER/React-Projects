@@ -1,0 +1,80 @@
+.contact--section{
+    padding-bottom: 4rem;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+}
+
+.contact--card--container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.contact--card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+    background: var(--bg-color-variant);
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.contact--card--title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--trans-white-color)
+}
+
+.contact--card--subtitle {
+    font-size: 1.2rem;
+    font-weight: 800;
+
+}
+
+.contact--form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact--form--input {
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--prim-color);
+    border-radius: 1rem;
+    background: var(--bg-color-variant);
+    color: var(--white-color);
+    font-size: 1.2rem;
+
+    padding: 1rem 2rem;
+
+    transition: var(--transition);
+}
+
+.contact--form--input::placeholder{
+    color: var(--trans-white-color);
+}
+
+.contact--form--input:focus{
+    transform: scale(1.05);
+
+    border-style: solid;
+    border-width: 2px;
+    outline:none;
+
+    box-shadow: 0 10px 10px -7px rgba(14, 14, 14, 0.641);
+}
+
+@media screen and (max-width: 600px) {
+    .contact {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+}

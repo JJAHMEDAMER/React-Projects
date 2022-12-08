@@ -2,13 +2,12 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+    width: 100%;
 }
 
 .experience--card {
-    min-width: 100%;
-
     background-color: var(--bg-color-variant);
-    padding: 2rem;
+    padding: 2rem 4rem;
 
     border-radius: 2rem;
     border-style: solid;
@@ -18,9 +17,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-
-    justify-content: center;
-    align-items: center;
 }
 
 .experience--card--title {
@@ -63,7 +59,13 @@
 
 @media screen and (max-width: 1024px) {
     .experience--card{
-        gap: 2rem 0;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem 0;
+    }
+
+    .experience--card--element{
+        width: 75%;
+        margin: auto;
     }
 }
 
@@ -73,6 +75,7 @@
     }
 
     .experience--card{
+        grid-template-columns: repeat(2, 1fr);
         gap: 2rem 0;
     }
 }

@@ -75,6 +75,9 @@ body {
     --white-color: #fff;
     --trans-white-color: rgba(255, 255, 255, 0.6);
 
+    --navbar-bg-color: #030324a1;
+    --navbar-icon-bg-color: #4db5ffba;
+
     /* Transiton */
     /* transition-property: all;
     transition-duration: 250ms;
@@ -198,6 +201,10 @@ button:hover {
     .section--title {
         margin-bottom: 2rem;
     }
+
+    .icon{
+        font-size: 1.8rem;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -212,5 +219,9 @@ button:hover {
 
     .section--title {
         margin-bottom: 2rem;
+    }
+
+    .icon{
+        font-size: 1.5rem;
     }
 }

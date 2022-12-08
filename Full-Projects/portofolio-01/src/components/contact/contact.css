@@ -41,7 +41,11 @@
 .contact--form {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
+}
+
+.contact--form>button{
+    margin-top: 1rem;
 }
 
 .contact--form--input {
@@ -76,5 +80,9 @@
     .contact {
         grid-template-columns: 1fr;
         gap: 4rem;
+    }
+
+    .contact--form {
+        gap: 1rem;
     }
 }

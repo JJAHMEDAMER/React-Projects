@@ -38,6 +38,7 @@ export const Contact = () => {
             <div className="contact--form">
                 <input type="text" placeholder="Your Full Name" className="contact--form--input" />
                 <input type="email" placeholder="Your Email" className="contact--form--input" />
+                <input type="email" placeholder="Subject" className="contact--form--input" />
                 <textarea rows="8" placeholder="Type a message..." className="contact--form--input" />
                 <button>Send Message</button>
             </div>

@@ -33,35 +33,35 @@ const fakeProjects = [
     },
     {
         title: "Crypto Currency Dashboard & Financial Visualization",
-        id: 0,
+        id: 2,
         image: img_02,
         githubRepo: "https://github.com/",
         liveDemo: ""
     },
     {
         title: "Crypto Currency Dashboard & Financial Visualization",
-        id: 0,
+        id: 3,
         image: img_03,
         githubRepo: "https://github.com/",
         liveDemo: ""
     },
     {
         title: "Crypto Currency Dashboard & Financial Visualization",
-        id: 0,
+        id: 4,
         image: img_04,
         githubRepo: "https://github.com/",
         liveDemo: ""
     },
     {
         title: "Crypto Currency Dashboard & Financial Visualization",
-        id: 0,
+        id: 5,
         image: img_05,
         githubRepo: "https://github.com/",
         liveDemo: ""
     },
     {
         title: "Crypto Currency Dashboard & Financial Visualization",
-        id: 0,
+        id: 6,
         image: img_06,
         githubRepo: "https://github.com/",
         liveDemo: ""

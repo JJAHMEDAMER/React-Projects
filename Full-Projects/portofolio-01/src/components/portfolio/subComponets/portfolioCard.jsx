@@ -4,10 +4,10 @@ export const PortfolioCard = (props) => {
         <div className="portfolio--content">
             <div className="portfolio--title">{props.title}</div>
             <div className="portfolio--btns">
-                <a href={props.githubRepo} target="_blank">
+                <a href={props.githubRepo} target="_blank" rel="noreferrer">
                     <button className="sec-btn">GitHub</button>
                 </a>
-                <a href={props.liveDemo} target="_blank">
+                <a href={props.liveDemo} target="_blank" rel="noreferrer">
                     <button>Demo</button>
                 </a>
             </div>

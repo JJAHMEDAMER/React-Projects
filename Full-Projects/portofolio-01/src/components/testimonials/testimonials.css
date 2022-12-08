@@ -20,6 +20,7 @@
     border-width: 5px;
     border-color: var(--prim-color);
     width: 9rem;
+    aspect-ratio: 1;
 }
 
 .testimonials--title {

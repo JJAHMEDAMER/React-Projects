@@ -8,7 +8,7 @@ import "./hero.css"
 import heroImg from "../../assets/me.png"
 
 export const Hero = () => {
-    return <div className="section hero--section">
+    return <div className="section hero--section" id="home">
         <h2 className="section--intro">Hello I'm</h2>
         <h1 className="section--title hero--title">Ahmed Amer</h1>
         <h3 className="section--tagline">Fullstack Developer</h3>

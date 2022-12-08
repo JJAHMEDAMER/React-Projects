@@ -7,7 +7,7 @@ import { FaFacebookMessenger, FaWhatsapp } from "react-icons/fa"
 import "./contact.css"
 
 export const Contact = () => {
-    return <div className="section contact--section">
+    return <div className="section contact--section" id="contact">
         <div className="section--intro">Get In Touch</div>
         <div className="section--title">
             Contact Me

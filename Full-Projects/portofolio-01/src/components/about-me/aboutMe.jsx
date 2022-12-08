@@ -10,7 +10,7 @@ import "./aboutMe.css"
 import imgSection from "../../assets/me-about.jpg"
 
 export const AboutMe = () => {
-    return <div className="section about--section">
+    return <div className="section about--section" id="about">
         <div className="section--intro">Get To Know Me</div>
         <div className="section--title">About Me</div>
 

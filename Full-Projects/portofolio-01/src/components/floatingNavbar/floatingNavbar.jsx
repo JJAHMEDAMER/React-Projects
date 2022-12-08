@@ -12,21 +12,21 @@ import "./floatingNavbar.css"
 export const FloatingNavbar = () => {
     return <div className="floatingNavbar--container">
         <div className="floatingNavbar">
-            <div className="floatingNavbar--icon">
+            <a href="#home" className="floatingNavbar--icon">
                 <CiHome className="icon" />
-            </div>
-            <div className="floatingNavbar--icon">
+            </a>
+            <a href="#about" className="floatingNavbar--icon">
                 <RxPerson className="icon" />
-            </div>
-            <div className="floatingNavbar--icon">
+            </a>
+            <a href="#experiance" className="floatingNavbar--icon">
                 <BsPatchCheck className="icon" />
-            </div>
-            <div className="floatingNavbar--icon">
+            </a>
+            <a href="#services" className="floatingNavbar--icon">
                 <VscTools className="icon" />
-            </div>
-            <div className="floatingNavbar--icon">
+            </a>
+            <a href="#contact" className="floatingNavbar--icon">
                 <HiOutlineChatBubbleLeftEllipsis className="icon" />
-            </div>
+            </a>
         </div>
     </div>
 }

@@ -5,7 +5,7 @@ import { BsBookmarkCheckFill } from "react-icons/bs"
 import "./services.css"
 
 export const Services = () => {
-    return <div className="section services--section">
+    return <div className="section services--section" id="services">
         <div className="section--intro">What I Offer</div>
         <div className="section--title">Services</div>
 

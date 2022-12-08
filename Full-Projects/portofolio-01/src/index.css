@@ -178,6 +178,11 @@ button:hover {
     background-color: var(--prim-color-var);
 }
 
+.icon{
+    font-size: 2.5rem;
+    color: var(--prim-color);
+}
+
 
 /* Media Quiry */
 @media screen and (max-width: 1024px) {

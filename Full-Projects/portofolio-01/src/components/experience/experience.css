@@ -1,14 +1,14 @@
 .experience--card--container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .experience--card {
     min-width: 100%;
 
     background-color: var(--bg-color-variant);
-    padding: 2rem 4rem;
+    padding: 2rem;
 
     border-radius: 2rem;
     border-style: solid;
@@ -17,7 +17,7 @@
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem 4rem;
+    gap: 2rem;
 
     justify-content: center;
     align-items: center;
@@ -27,8 +27,8 @@
     grid-column-start: 1;
     grid-column-end: -1;
 
-    font-weight: 600;
-    font-size: 1.5rem;
+    font-weight: 800;
+    font-size: 1.2rem;
     letter-spacing: 2px;
 
     color: var(--prim-color);
@@ -46,11 +46,13 @@
 }
 
 .skill {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 .level {
-    font-size: 1rem;
+    font-size: 0.7rem;
+    color: var(--trans-white-color);
 }
 
 .experience--card--element>.icon {

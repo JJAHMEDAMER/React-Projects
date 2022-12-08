@@ -14,7 +14,7 @@
 
     background-color: var(--navbar-bg-color);
     border-radius: 50000px;
-    padding: 1rem;
+    padding: 0.7rem 1rem;
 }
 
 .floatingNavbar--icon {
@@ -23,7 +23,7 @@
     justify-content: center;
     background-color: var(--navbar-icon-bg-color);
     border-radius: 50%;
-    padding: 1rem;
+    padding: 0.8rem;
 }
 
 .floatingNavbar--icon>* {

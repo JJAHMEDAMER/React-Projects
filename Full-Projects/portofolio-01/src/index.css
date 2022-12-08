@@ -115,6 +115,7 @@ body {
 }
 
 .section {
+    min-height: 100vh;
     margin-top: 8rem;
     width: var(--section-width-lg);
     /* Center section to body*/
@@ -182,7 +183,7 @@ button:hover {
 }
 
 .icon{
-    font-size: 2.5rem;
+    font-size: 1.4rem;
     color: var(--prim-color);
 }
 
@@ -190,6 +191,7 @@ button:hover {
 /* Media Quiry */
 @media screen and (max-width: 1024px) {
     .section {
+        min-height: auto;
         margin-top: 6rem;
         width: var(--section-width-md);
     }
@@ -203,12 +205,13 @@ button:hover {
     }
 
     .icon{
-        font-size: 1.8rem;
+        font-size: 1.2rem;
     }
 }
 
 @media screen and (max-width: 600px) {
     .section {
+        min-height: auto;
         margin-top: 4rem;
         width: var(--section-width-sm);
     }
@@ -222,6 +225,6 @@ button:hover {
     }
 
     .icon{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 }
